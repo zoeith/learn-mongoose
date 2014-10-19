@@ -1,0 +1,16 @@
+#!/bin/bash
+case "$1" in
+    mongod)
+	echo "Adding mongo to path"
+	export PATH=/path/to/mongod/bin:$PATH
+	echo "Starting mongodb"
+	mongod --dbpath /path/to/data
+	;;
+    mongo)
+	export PATH=/path/to/mongod/bin:$PATH
+	mongo
+	;;
+    *)
+	echo "Use to start applications: mongod, mongo"
+	exit 1
+esac
