@@ -17,6 +17,8 @@ use admin
 db.shutdownServer()
 ```
 
+Add a user: http://docs.mongodb.org/manual/tutorial/add-user-to-database/
+
 #First Read/Write
 The files mongoose\_practice\_read.js and mongoose\_practice\_write.js will print to the console your entries from the tutorial above and write to the collection a new entry.
 
