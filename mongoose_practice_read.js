@@ -11,7 +11,7 @@ var testschema = mongoose.Schema({
 
 var testmodel = mongoose.model('atest',testschema)
 
-function upload(err){
+function download(err){
 	console.log(err);
 	testmodel.find()
 	.exec( function (err,data){
@@ -23,4 +23,4 @@ function upload(err){
 
 mongoose.set('debug', true);
 mongoose.connect(
-	  "mongodb://zoey:pass@127.0.0.1:27017/mydb", upload);
+	  "mongodb://zoey:pass@127.0.0.1:27017/mydb", download);
